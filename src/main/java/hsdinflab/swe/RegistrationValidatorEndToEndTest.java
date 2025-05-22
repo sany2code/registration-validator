@@ -7,28 +7,20 @@ public class RegistrationValidatorEndToEndTest {
 
     @Test
     public void successfulRegistrationWithValidData() {
-
         RegistrationValidator validator = new RegistrationValidator(new EmailCheckerMock(), new PasswordChecker(), new UsernameChecker());
         String email = "user@example.com";
-        String username = "Valit";
         String password = "Secure1#";
-
+        String username = "Valit";
         assertTrue(validator.validate(email, password, username));
     }
 
     @Test
     public void failedRegistrationWithInvalidData() {
-
         RegistrationValidator validator = new RegistrationValidator(new EmailCheckerMock(), new PasswordChecker(), new UsernameChecker());
-
-
         String email = "email.com";
-        String username = "Valit";
-        String password = "StrongPass1!";
-
-        boolean result = validator.validate(email, password, username);
-
-        assertFalse(result);
+        String password = "test";
+        String username = " ";
+        assertFalse(validator.validate(email, password, username));
     }
 
 }

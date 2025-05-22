@@ -4,7 +4,7 @@ public class EmailCheckerMock implements IEmailChecker {
 
     @Override
     public boolean isValid(String email) {
-        return true;
+        return email.contains("@");
     }
 
 }
