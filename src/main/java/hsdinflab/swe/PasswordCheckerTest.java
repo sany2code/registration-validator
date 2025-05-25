@@ -22,5 +22,6 @@ public class PasswordCheckerTest {
         assertFalse(checker.isValid("Tes1!"));
         assertFalse(checker.isValid("abcdefgh"));
         assertFalse(checker.isValid(""));
+        assertFalse(checker.isValid(" "));
     }
 }

@@ -3,6 +3,7 @@ package hsdinflab.swe;
 public class UsernameChecker {
 
     public boolean isValid(String username) {
+
         // -----------------------------------------------------------------//
         // Initialisiert den Checker (z. B. Vorbereitung interner Ressourcen)
         // Hinweis: Dieser Teil kann für die User Stories und Testfallanalyse ignoriert werden.

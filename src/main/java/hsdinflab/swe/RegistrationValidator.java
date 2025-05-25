@@ -31,6 +31,5 @@ public class RegistrationValidator {
         return validateEmail(email)
             && validatePassword(password)
             && validateUsername(username);
-
     }
 }

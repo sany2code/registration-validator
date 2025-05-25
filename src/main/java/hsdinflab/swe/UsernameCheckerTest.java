@@ -8,10 +8,10 @@ public class UsernameCheckerTest {
     @Test
     public void validUsernames() {
         UsernameChecker usernameChecker = new UsernameChecker();
-        assertTrue(true);
         assertTrue(usernameChecker.isValid("123einszweidrei"));
-        assertTrue(usernameChecker.isValid("Anna_Maria"));
+        assertTrue(usernameChecker.isValid("Max123"));
         assertTrue(usernameChecker.isValid("12345"));
+        assertTrue(usernameChecker.isValid("Max_123"));
     }
 
     @Test
